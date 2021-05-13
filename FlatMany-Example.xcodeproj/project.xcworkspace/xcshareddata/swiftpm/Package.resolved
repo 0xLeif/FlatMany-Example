@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DataObject",
+        "repositoryURL": "https://github.com/0xLet/DataObject",
+        "state": {
+          "branch": null,
+          "revision": "9b3d4ac019db5d1d313b92f281697b1c8665fc41",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "FlatMany",
+        "repositoryURL": "https://github.com/0xLeif/FlatMany",
+        "state": {
+          "branch": null,
+          "revision": "8ca4f859ea69f6659d9e352a4f6aea3863d2caa1",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "SURL",
+        "repositoryURL": "https://github.com/0xLet/SURL",
+        "state": {
+          "branch": null,
+          "revision": "c04f941eea250f78f5c7151c03cd2489ca9ffc2b",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "SwiftFu",
+        "repositoryURL": "https://github.com/0xLet/SwiftFu",
+        "state": {
+          "branch": null,
+          "revision": "818f889edc5a0c1657b50f3a1e841aa508177323",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "WTV",
+        "repositoryURL": "https://github.com/0xLet/WTV",
+        "state": {
+          "branch": null,
+          "revision": "8eefc65bf823eb7612047dbd2df4c6c73864c500",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

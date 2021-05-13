@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		5C6C2F59264DAB7400BF0439 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6C2F58264DAB7400BF0439 /* ContentView.swift */; };
 		5C6C2F5B264DAB7500BF0439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6C2F5A264DAB7500BF0439 /* Assets.xcassets */; };
 		5C6C2F5E264DAB7500BF0439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6C2F5D264DAB7500BF0439 /* Preview Assets.xcassets */; };
+		5C6C2F68264DABA500BF0439 /* FlatMany in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6C2F67264DABA500BF0439 /* FlatMany */; };
+		5C6C2F6C264DABBC00BF0439 /* DataObject in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6C2F6B264DABBC00BF0439 /* DataObject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6C2F68264DABA500BF0439 /* FlatMany in Frameworks */,
+				5C6C2F6C264DABBC00BF0439 /* DataObject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,10 @@
 			dependencies = (
 			);
 			name = "FlatMany-Example";
+			packageProductDependencies = (
+				5C6C2F67264DABA500BF0439 /* FlatMany */,
+				5C6C2F6B264DABBC00BF0439 /* DataObject */,
+			);
 			productName = "FlatMany-Example";
 			productReference = 5C6C2F53264DAB7400BF0439 /* FlatMany-Example.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,10 @@
 				Base,
 			);
 			mainGroup = 5C6C2F4A264DAB7400BF0439;
+			packageReferences = (
+				5C6C2F66264DABA500BF0439 /* XCRemoteSwiftPackageReference "FlatMany" */,
+				5C6C2F6A264DABBC00BF0439 /* XCRemoteSwiftPackageReference "DataObject" */,
+			);
 			productRefGroup = 5C6C2F54264DAB7400BF0439 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +340,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C6C2F66264DABA500BF0439 /* XCRemoteSwiftPackageReference "FlatMany" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/FlatMany";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		5C6C2F6A264DABBC00BF0439 /* XCRemoteSwiftPackageReference "DataObject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLet/DataObject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C6C2F67264DABA500BF0439 /* FlatMany */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6C2F66264DABA500BF0439 /* XCRemoteSwiftPackageReference "FlatMany" */;
+			productName = FlatMany;
+		};
+		5C6C2F6B264DABBC00BF0439 /* DataObject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6C2F6A264DABBC00BF0439 /* XCRemoteSwiftPackageReference "DataObject" */;
+			productName = DataObject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C6C2F4B264DAB7400BF0439 /* Project object */;
 }
