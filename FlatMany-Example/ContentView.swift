@@ -26,7 +26,7 @@ struct ContentView: View {
                         task = Just<[Int]>([Int](1 ... 100))
                             .mapError(absurd)
                             .flatMany { value in
-                                "https://jsonplaceholder.typicode.com/todos/\(value)".url!.get()
+                                "https://jsonplaceholder.typicode.com/todos/\(value)".url?.get()
                                     .map { DataObject($0.0) }
                                     .eraseToAnyPublisher()
                             }
